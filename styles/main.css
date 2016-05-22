@@ -64,4 +64,10 @@
 html {
   font-size: 62.5%; }
 
+.listView__heading {
+  text-transform: capitalize; }
+
+.listView__contact--fullName {
+  list-style: none; }
+
 /*# sourceMappingURL=main.css.map */

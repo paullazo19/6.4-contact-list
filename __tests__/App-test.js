@@ -15,8 +15,12 @@ describe('Boilerplate', () => {
       <App/>
     )
     // find h1 on page
-    var heading = TestUtils.findRenderedDOMComponentWithClass(appRendered, "heading");
+    var heading = TestUtils.findRenderedDOMComponentWithClass(appRendered, "listView__heading");
     // assert it has text
-    expect(heading.textContent).toEqual("Hello!");
+    expect(heading.textContent).toEqual("my peeps");
   });
+
+
+
+
 });

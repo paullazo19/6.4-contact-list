@@ -10,7 +10,7 @@ export default React.createClass({
           firstName: "tony",
           lastName: "romo",
           email: "number9@dallascowboys.com",
-          phoneNumber: "2144432376",
+          phoneNumber: "(214)443-2376",
           city: "dallas",
           state: "tx",
           photo: "romo.png"
@@ -19,7 +19,7 @@ export default React.createClass({
           firstName: "jason",
           lastName: "witten",
           email: "number82@dallascowboys.com",
-          phoneNumber: "2145547534",
+          phoneNumber: "(214)554-7534",
           city: "fort worth",
           state: "tx",
           photo: "witten.png"
@@ -28,7 +28,7 @@ export default React.createClass({
           firstName: "dez",
           lastName: "bryant",
           email: "number88@dallascowboys.com",
-          phoneNumber: "2149630434",
+          phoneNumber: "(214)963-0434",
           city: "dallas",
           state: "tx",
           photo: "bryant.png"
@@ -37,7 +37,7 @@ export default React.createClass({
           firstName: "sean",
           lastName: "lee",
           email: "number50@dallascowboys.com",
-          phoneNumber: "2148675912",
+          phoneNumber: "(214)867-5912",
           city: "frisco",
           state: "tx",
           photo: "lee.png"
@@ -46,7 +46,7 @@ export default React.createClass({
           firstName: "dan",
           lastName: "bailey",
           email: "number5@dallascowboys.com",
-          phoneNumber: "2143478965",
+          phoneNumber: "(214)347-8965",
           city: "irving",
           state: "tx",
           photo: "bailey.png"

@@ -19,7 +19,7 @@ export default React.createClass({
             <i className="fa fa-mobile detailView__contactIcon"></i><p className="detailView__contactInfo">&nbsp;{this.props.params.phoneNumber} </p>
           </li>
           <li className="detailView__contactItem">
-            <i className="fa fa-globe detailView__contactIcon"></i><p className="detailView__contactInfo">&nbsp;{this.props.params.city}, {this.props.params.state}</p>
+            <i className="fa fa-globe detailView__contactIcon"></i><p className="detailView__contactInfo detailView__contactState">&nbsp;{this.props.params.city}, {this.props.params.state}</p>
           </li>
         </ul>
 

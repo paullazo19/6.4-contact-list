@@ -128,11 +128,15 @@ body {
   padding: 2rem;
   text-transform: capitalize; }
 
-.detailView__list {
-  padding: 2rem; }
+.detailView__contactIcon {
+  padding-left: 2rem; }
 
 .detailView__contactItem {
-  list-style: none; }
+  border-bottom: 1px solid #e6e6e6;
+  list-style: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 30rem; }
 
 .detailView__contactInfo {
   display: inline-block;
@@ -140,6 +144,9 @@ body {
 
 .detailView__contactEmail {
   text-transform: none; }
+
+.detailView__contactState {
+  text-transform: uppercase; }
 
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome

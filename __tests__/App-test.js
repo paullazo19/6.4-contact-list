@@ -7,9 +7,9 @@ import App from '../modules/App';
 
 jest.unmock('../modules/App');
 
-describe('Boilerplate', () => {
+describe('List view', () => {
 
-  it('contains hello text', () => {
+  it('contains heading text', () => {
     // This places our component into our test to find off of
     var appRendered = TestUtils.renderIntoDocument(
       <App/>
@@ -17,7 +17,7 @@ describe('Boilerplate', () => {
     // find h1 on page
     var heading = TestUtils.findRenderedDOMComponentWithClass(appRendered, "listView__heading");
     // assert it has text
-    expect(heading.textContent).toEqual("my peeps");
+    expect(heading.textContent).toEqual("my ‘boys");
   });
 
 

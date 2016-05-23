@@ -54,9 +54,6 @@ export default React.createClass({
       ]
     }
   },
-  componentDidMount() {
-    var id = this.props.params.id
-  },
   render() {
     console.log(this.props);
     return (
@@ -65,7 +62,7 @@ export default React.createClass({
           <h1 className="listView__heading">my &lsquo;boys</h1>
           <nav className="listView__contacts">
             {this.props.contacts.map(function(contact, i){
-              return <Link to={`/${contact.lastName}/${contact.firstName}/${contact.email}/${contact.phoneNumber}/${contact.city}/${contact.state}/${contact.photo}`} key={i} id={i} className="listView__contact"><img className="listView__contact--image" src={`./images/${contact.photo}`}/><li className="listView__contact--fullName">{contact.firstName} {contact.lastName}</li></Link>
+              return <Link to={`/${contact.lastName}/${contact.firstName}/${contact.email}/${contact.phoneNumber}/${contact.city}/${contact.state}/${contact.photo}`} key={i} className="listView__contact"><img className="listView__contact--image" src={`./images/${contact.photo}`}/><li className="listView__contact--fullName">{contact.firstName} {contact.lastName}</li></Link>
             }, this)}
           </nav>
         </div>

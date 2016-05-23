@@ -61,13 +61,51 @@
   width: 100%;
   font-size: 1.4rem; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 html {
   font-size: 62.5%; }
 
+body {
+  font-family: "Helvetica", sans-serif; }
+
 .listView__heading {
+  background-color: #0d254c;
+  color: white;
+  padding: 2rem;
   text-transform: capitalize; }
 
+.listView__contact {
+  border-bottom: 1px solid #e6e6e6;
+  display: block;
+  padding: 1rem;
+  padding-left: 1.5rem; }
+
 .listView__contact--fullName {
-  list-style: none; }
+  color: #0d254c;
+  display: inline-block;
+  height: 5rem;
+  font-size: 1.5rem;
+  list-style: none;
+  padding-top: 1.75rem;
+  padding-left: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  vertical-align: top;
+  width: 15rem; }
+
+.listView__contact--image {
+  background-color: #0d254c;
+  border-radius: 5rem;
+  width: 5rem; }
+
+.detailView__heading {
+  background-color: #0d254c;
+  color: white;
+  padding: 2rem;
+  text-transform: capitalize; }
 
 /*# sourceMappingURL=main.css.map */

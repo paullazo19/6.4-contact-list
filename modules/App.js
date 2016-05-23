@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React from 'react'
+import { Link } from 'react-router'
 
 export default React.createClass({
   getDefaultProps(){
@@ -12,7 +12,8 @@ export default React.createClass({
           email: "number9@dallascowboys.com",
           phoneNumber: "2144432376",
           city: "dallas",
-          state: "tx"
+          state: "tx",
+          photo: "./images/romo.png"
         },
         {
           firstName: "jason",
@@ -20,7 +21,8 @@ export default React.createClass({
           email: "number82@dallascowboys.com",
           phoneNumber: "2145547534",
           city: "fort worth",
-          state: "tx"
+          state: "tx",
+          photo: "./images/witten.png"
         },
         {
           firstName: "dez",
@@ -28,7 +30,8 @@ export default React.createClass({
           email: "number88@dallascowboys.com",
           phoneNumber: "2149630434",
           city: "dallas",
-          state: "tx"
+          state: "tx",
+          photo: "./images/bryant.png"
         },
         {
           firstName: "sean",
@@ -36,7 +39,8 @@ export default React.createClass({
           email: "number50@dallascowboys.com",
           phoneNumber: "2148675912",
           city: "frisco",
-          state: "tx"
+          state: "tx",
+          photo: "./images/lee.png"
         },
         {
           firstName: "dan",
@@ -44,21 +48,22 @@ export default React.createClass({
           email: "number5@dallascowboys.com",
           phoneNumber: "2143478965",
           city: "irving",
-          state: "tx"
+          state: "tx",
+          photo: "./images/bailey.png"
         }
       ]
     }
   },
   render() {
-    console.log(this.props.contacts);
+    console.log("Hi", this.props.contacts);
     return (
       <main>
         <h1 className="listView__heading">my &lsquo;boys</h1>
         <div>
-          <nav className="contacts">
+          <nav className="listView__contacts">
             {this.props.contacts.map(function(contact, i){
-              return <Link to={`/detailView/${contact.firstName}${contact.lastName}`} key={i} className="listView__contact--fullName"> <li>{contact.firstName} {contact.lastName}</li></Link>
-            })}
+              return <Link to={`/${contact.lastName}`} key={i}  className="listView__contact"><img className="listView__contact--image" src={contact.photo}/><li className="listView__contact--fullName">{contact.firstName} {contact.lastName}</li></Link>
+            }, this)}
           </nav>
         </div>
         {this.props.children}

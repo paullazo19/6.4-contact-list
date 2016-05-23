@@ -7,6 +7,6 @@ import detailView from './modules/DetailView'
 render((
   <Router history={browserHistory}>
     <Route path="/" component={App}/>
-    <Route path="/:lastName" component={detailView}/>
+    <Route path="/:lastName/:firstName/:email/:phoneNumber/:city/:state/:photo" component={detailView}/>
   </Router>
 ), document.getElementById('app'))

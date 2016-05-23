@@ -13,7 +13,7 @@ export default React.createClass({
           phoneNumber: "2144432376",
           city: "dallas",
           state: "tx",
-          photo: "./images/romo.png"
+          photo: "romo.png"
         },
         {
           firstName: "jason",
@@ -22,7 +22,7 @@ export default React.createClass({
           phoneNumber: "2145547534",
           city: "fort worth",
           state: "tx",
-          photo: "./images/witten.png"
+          photo: "witten.png"
         },
         {
           firstName: "dez",
@@ -31,7 +31,7 @@ export default React.createClass({
           phoneNumber: "2149630434",
           city: "dallas",
           state: "tx",
-          photo: "./images/bryant.png"
+          photo: "bryant.png"
         },
         {
           firstName: "sean",
@@ -40,7 +40,7 @@ export default React.createClass({
           phoneNumber: "2148675912",
           city: "frisco",
           state: "tx",
-          photo: "./images/lee.png"
+          photo: "lee.png"
         },
         {
           firstName: "dan",
@@ -49,7 +49,7 @@ export default React.createClass({
           phoneNumber: "2143478965",
           city: "irving",
           state: "tx",
-          photo: "./images/bailey.png"
+          photo: "bailey.png"
         }
       ]
     }
@@ -65,7 +65,7 @@ export default React.createClass({
           <h1 className="listView__heading">my &lsquo;boys</h1>
           <nav className="listView__contacts">
             {this.props.contacts.map(function(contact, i){
-              return <Link to={`/${contact.lastName}`} key={i} id={i} className="listView__contact"><img className="listView__contact--image" src={contact.photo}/><li className="listView__contact--fullName">{contact.firstName} {contact.lastName}</li></Link>
+              return <Link to={`/${contact.lastName}/${contact.firstName}/${contact.email}/${contact.phoneNumber}/${contact.city}/${contact.state}/${contact.photo}`} key={i} id={i} className="listView__contact"><img className="listView__contact--image" src={`./images/${contact.photo}`}/><li className="listView__contact--fullName">{contact.firstName} {contact.lastName}</li></Link>
             }, this)}
           </nav>
         </div>

@@ -10,7 +10,7 @@ export default React.createClass({
         </div>
         <ul className="detailView__list">
           <li className="detailView__contactItem">
-            <i className="fa fa-user detailView__contactIcon"></i><p className="detailView__contactInfo">&nbsp;{this.props.params.firstName} {this.props.params.lastName}</p>
+            <i className="fa fa-user detailView__contactIcon"></i><p className="detailView__contactInfo detailView__contactName">&nbsp;{this.props.params.firstName} {this.props.params.lastName}</p>
           </li>
           <li className="detailView__contactItem">
             <i className="fa fa-envelope detailView__contactIcon"></i><p className="detailView__contactInfo detailView__contactEmail">&nbsp;{this.props.params.email} </p>

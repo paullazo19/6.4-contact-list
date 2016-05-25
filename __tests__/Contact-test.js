@@ -1,23 +1,23 @@
-// __tests__/CheckboxWithLabel-test.js
+// __tests__/Contact-test.js
 'use strict';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import TestUtils from 'react-addons-test-utils';
-import detailView from '../modules/DetailView';
+import DetailView from '../modules/DetailView';
 
 jest.unmock('../modules/DetailView');
 
 describe('Detail view', () => {
 
-  it('contains an unordered list', () => {
-    // This places our component into our test to find off of
-    TestUtils.renderIntoDocument(
-      <ul/>
+  it('contains the name of the selected contact', () => {
+    var stubbedParams = {
+      firstName: "Ron"
+    }
+    var listRendered = TestUtils.renderIntoDocument(
+      <DetailView params={stubbedParams}/>
     )
-    expect(TestUtils.isElement(<ul/>)).toBe(true);
+    var detailName = TestUtils.findRenderedDOMComponentWithClass(listRendered, "detailView__contactName");
+
+    expect(detailName.textContent).toContain("Ron");
   });
-
-
-
-
 });

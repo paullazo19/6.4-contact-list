@@ -55,7 +55,6 @@ export default React.createClass({
     }
   },
   render() {
-    console.log(this.props);
     return (
       <main>
         <div className="listView">

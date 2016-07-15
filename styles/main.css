@@ -113,7 +113,10 @@ body {
     width: 75%; } }
 @media only screen and (max-device-width: 1024px) {
   .listView {
-    width: 100%; } }
+    width: 100%; }
+
+  .fa-3x {
+    font-size: 200%; } }
 .detailView__header {
   background-color: #0d254c;
   padding-top: 4rem;

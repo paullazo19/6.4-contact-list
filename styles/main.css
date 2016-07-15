@@ -111,6 +111,9 @@ body {
   .listView {
     margin: 0 auto;
     width: 75%; } }
+@media only screen and (max-device-width: 1024px) {
+  .listView {
+    width: 100%; } }
 .detailView__header {
   background-color: #0d254c;
   padding-top: 4rem;
@@ -167,6 +170,9 @@ body {
 
   .detailView__contactInfo {
     font-size: 4rem; } }
+@media only screen and (max-device-width: 1024px) {
+  .detailView {
+    width: 100%; } }
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

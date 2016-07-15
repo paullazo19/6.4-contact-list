@@ -142,7 +142,8 @@ body {
 
 .detailView__contactIcon {
   padding-left: 4rem;
-  padding-right: 2rem; }
+  padding-right: 2rem;
+  display: none; }
 
 .detailView__contactItem {
   background-color: white;
@@ -166,16 +167,10 @@ body {
 @media (min-width: 768px) {
   .detailView {
     margin: 0 auto;
-    width: 75%; }
-
-  .detailView__contactInfo {
-    font-size: 4rem; } }
+    width: 75%; } }
 @media only screen and (max-device-width: 1024px) {
   .detailView {
-    width: 100%; }
-
-  .fa-3x {
-    width: 200%; } }
+    width: 100%; } }
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

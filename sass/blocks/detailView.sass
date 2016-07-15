@@ -1,5 +1,4 @@
 // detail view
-
 .detailView__header
   background-color: $cowboyBlue
   padding-top: 4rem
@@ -29,6 +28,7 @@
 .detailView__contactIcon
   padding-left: 4rem
   padding-right: 2rem
+  display: none
 
 .detailView__contactItem
   background-color: white
@@ -54,12 +54,24 @@
     margin: 0 auto
     width: 75%
 
-  .detailView__contactInfo
-    font-size: 4rem
-
 // smart device breakpoints
 @media only screen and (max-device-width: 1024px)
   .detailView
     width: 100%
-  .fa-3x
-    width: 200%
+
+// @media (min-width: 768px)
+//   body
+//     background-color: red
+//   .detailView
+//     margin: 0 auto
+//     width: 75%
+//
+//   .detailView__contactInfo
+//     font-size: 4rem
+//
+// // smart device breakpoints
+// @media only screen and (max-device-width: 1024px)
+//   body
+//     background-color: green
+//   .detailView
+//     width: 100%

@@ -1,31 +1,44 @@
 // list view
+.listView
+  background-color: white
+  width: 100%
 
 .listView__heading
   background-color: $cowboyBlue
   color: white
-  padding: 2rem
+  font-size: 7rem
+  padding: 3rem
   text-transform: capitalize
 
 .listView__contact
   border-bottom: 1px solid rgb(230, 230, 230)
   display: block
-  padding: 1rem
-  padding-left: 1.5rem
+  padding: 3rem
+  padding-left: 3.5rem
 
 .listView__contact--fullName
   color: $cowboyBlue
   display: inline-block
-  height: 5rem
-  font-size: 1.5rem
+  font-size: 5rem
   list-style: none
-  padding-top: 1.75rem
-  padding-left: 1rem
+  padding-top: 7rem
+  padding-left: 4rem
   text-decoration: none
   text-transform: capitalize
   vertical-align: top
-  width: 15rem
 
 .listView__contact--image
   background-color: $cowboyBlue
-  border-radius: 5rem
-  width: 5rem
+  border-radius: 20rem
+  width: 20rem
+
+
+@media (min-width: 768px)
+  .listView
+    margin: 0 auto
+    width: 75%
+
+// smart device breakpoints
+@media only screen and (max-device-width: 1024px)
+  .listView
+    // width: 100%

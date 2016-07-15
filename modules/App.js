@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Router, Route, hashHistory, IndexRoute, Link } from 'react-router'
 
 export default React.createClass({
   getDefaultProps(){

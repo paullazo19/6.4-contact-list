@@ -2,10 +2,9 @@
 
 .detailView__header
   background-color: $cowboyBlue
-  width: 30rem
-  height: 15rem
-  padding-left: 10rem
-  padding-top: 2rem
+  padding-top: 4rem
+  padding-bottom: 4rem
+  width: 100%
 
 .detailView__backIcon
   color: white
@@ -15,9 +14,11 @@
   left: 0
 
 .detailView__photo
-  width: 10rem
   background-color: $cowboySilver
-  border-radius: 10rem
+  border-radius: 30rem
+  display: block
+  margin: 0 auto
+  width: 30rem
 
 .detailView__heading
   background-color: $cowboyBlue
@@ -26,17 +27,20 @@
   text-transform: capitalize
 
 .detailView__contactIcon
-  padding-left: 2rem
+  padding-left: 4rem
+  padding-right: 2rem
 
 .detailView__contactItem
+  background-color: white
   border-bottom: 1px solid rgb(230, 230, 230)
   list-style: none
   padding-top: 1rem
   padding-bottom: 1rem
-  width: 30rem
+  width: 100%
 
 .detailView__contactInfo
   display: inline-block
+  font-size: 5rem
   text-transform: capitalize
 
 .detailView__contactEmail
@@ -44,3 +48,11 @@
 
 .detailView__contactState
   text-transform: uppercase
+
+@media (min-width: 768px)
+  .detailView
+    margin: 0 auto
+    width: 75%
+
+  .detailView__contactInfo
+    font-size: 4rem
